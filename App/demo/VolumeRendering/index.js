@@ -1,5 +1,5 @@
 ﻿/// <reference path="../common.js" />
-/// <reference path="../../../build/CesiumMeshVisualizer.js" />
+/// <reference path="../../../dist/CesiumMeshVisualizer.js" />
 
 //requirejs([
 //       "../../../requirejs.config.js",
@@ -73,6 +73,7 @@
         vertexShader: document.getElementById("vertexShaderFirstPass").textContent,
         fragmentShader: document.getElementById("fragmentShaderFirstPass").textContent,
         side: MeshMaterial.Sides.BACK,
+        depthTest:false,
         uniforms: {
             dimensions: dimensions
         }
